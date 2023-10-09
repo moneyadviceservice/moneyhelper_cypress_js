@@ -3,10 +3,9 @@
 
 name: MoneyHelper Cypress
 
-
 env:
   MONEYHELPER_BASEURL: ${{ vars.MONEYHELPER_BASEURL }}
-  DTT_BASEURL: ${{ vars.DTT_BASEURL}}
+  DTT_BASEURL: ${{ vars.DTT_BASEURL }}
 
 on:
   push:
@@ -27,5 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install
-    - run: npx cypress run headless
+    - run: yarn install
+    - run: yarn cypress run headless
