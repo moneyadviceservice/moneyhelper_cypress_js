@@ -4,8 +4,8 @@
 name: MoneyHelper Cypress
 
 env:
-  MONEYHELPER_BASEURL: ${{ vars.MONEYHELPER_BASEURL }}
-  DTT_BASEURL: ${{ vars.DTT_BASEURL }}
+  MONEYHELPER_BASEURL: ${{ vars.CYPRESS_MONEYHELPER_BASEURL }}
+  DTT_BASEURL: ${{ vars.CYPRESS_DTT_BASEURL }}
 
 on:
   push:
