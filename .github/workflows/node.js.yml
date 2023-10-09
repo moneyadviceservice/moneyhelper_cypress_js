@@ -20,16 +20,3 @@ jobs:
         env:
           CYPRESS_MONEYHELPER_BASEURL: ${{ vars.CYPRESS_MONEYHELPER_BASEURL }}
           CYPRESS_DTT_BASEURL: ${{ vars.CYPRESS_DTT_BASEURL }}
-
-      # - name: Use Node.js ${{ matrix.node-version }}
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: ${{ matrix.node-version }}
-      #     cache: 'npm'
-      # - name: Install dependencies
-      #   run: yarn install
-      # - name: Run Cypress tests (headless)
-      #   run: yarn cypress run headless
-      #   env:
-      #     MONEYHELPER_BASEURL: ${{ vars.CYPRESS_MONEYHELPER_BASEURL }}
-      #     DTT_BASEURL: ${{ vars.CYPRESS_DTT_BASEURL }}
