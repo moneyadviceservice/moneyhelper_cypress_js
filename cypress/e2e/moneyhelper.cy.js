@@ -1,7 +1,7 @@
 describe('MoneyHelper Core', () => {
     beforeEach(() => {
-        // const baseUrl = Cypress.env('MONEYHELPER_BASEURL')
-        const baseUrl = 'https://moneypensions-qa.adobecqms.net/'
+        const baseUrl = Cypress.env('MONEYHELPER_BASEURL')
+        // const baseUrl = 'https://moneypensions-qa.adobecqms.net/'
         cy.visit(`${baseUrl}/`)
         cy.acceptCookies()
         cy.setBreakPoint('desktop')
