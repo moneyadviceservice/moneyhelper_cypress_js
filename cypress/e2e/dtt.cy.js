@@ -1,6 +1,7 @@
 describe('MoneyHelper DTT', () => {
     beforeEach(() => {
-        const baseUrl = Cypress.env('DTT_BASEURL')
+        // const baseUrl = Cypress.env('DTT_BASEURL')
+        const baseUrl = 'https://adviser.moneyhelper.org.uk/en'
         cy.visit(`${baseUrl}/`)
         cy.acceptCookies()
         cy.setBreakPoint('desktop')
