@@ -4,6 +4,7 @@ Cypress.Commands.add('forceClick', {prevSubject: 'element'}, (subject, options) 
 
 // Accept cookies
 Cypress.Commands.add('acceptCookies', () => {
+    cy.wait(2)
     cy.get('div#ccc-notify').within(() => {
         cy.get('button#ccc-notify-accept').click()
     })
